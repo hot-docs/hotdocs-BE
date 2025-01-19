@@ -1,4 +1,4 @@
-package com.example.backend.domain.common.enums;
+package com.example.backend.domain.template.entity;
 
 public class TemplateEnums {
 

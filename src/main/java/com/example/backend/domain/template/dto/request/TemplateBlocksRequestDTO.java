@@ -1,6 +1,6 @@
 package com.example.backend.domain.template.dto.request;
 
-import com.example.backend.domain.common.enums.TemplateEnums.BlockType;
+import com.example.backend.domain.template.entity.TemplateEnums.BlockType;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

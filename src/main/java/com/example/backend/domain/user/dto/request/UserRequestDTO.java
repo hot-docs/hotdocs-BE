@@ -2,7 +2,7 @@ package com.example.backend.domain.user.dto.request;
 
 import java.time.LocalDateTime;
 
-import com.example.backend.domain.common.enums.UserEnums.*;
+import com.example.backend.domain.user.entity.UserEnums.*;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

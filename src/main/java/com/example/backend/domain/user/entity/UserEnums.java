@@ -1,4 +1,4 @@
-package com.example.backend.domain.common.enums;
+package com.example.backend.domain.user.entity;
 
 public class UserEnums { // 사용자 테이블 Enum
     // 로그인 카테고리

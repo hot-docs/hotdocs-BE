@@ -1,6 +1,6 @@
 package com.example.backend.domain.template.entity;
 
-import com.example.backend.domain.common.enums.TemplateEnums.BlockType;
+import com.example.backend.domain.template.entity.TemplateEnums.BlockType;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -2,7 +2,7 @@ package com.example.backend.domain.user.dto.response;
 
 import java.time.LocalDateTime;
 
-import com.example.backend.domain.common.enums.UserEnums.*;
+import com.example.backend.domain.user.entity.UserEnums.*;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

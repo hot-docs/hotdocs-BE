@@ -1,4 +1,4 @@
-package com.example.backend.domain.common.mapper;
+package com.example.backend.global.mapper;
 
 import com.example.backend.domain.user.dto.request.UserRequestDTO;
 import com.example.backend.domain.user.dto.response.UserResponseDTO;

@@ -1,6 +1,6 @@
 package com.example.backend.domain.template.dto.response;
 
-import com.example.backend.domain.common.enums.TemplateEnums.BlockType;
+import com.example.backend.domain.template.entity.TemplateEnums.BlockType;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
