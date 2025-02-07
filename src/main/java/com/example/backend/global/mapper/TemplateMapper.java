@@ -1,11 +1,14 @@
 package com.example.backend.global.mapper;
 
+import org.springframework.stereotype.Component;
+
 import com.example.backend.domain.template.dto.request.TemplateRequestDTO;
 import com.example.backend.domain.template.dto.response.TemplateResponseDTO;
 import com.example.backend.domain.template.entity.TemplateEntity;
 import com.example.backend.domain.template.entity.TypeEntity;
 import com.example.backend.domain.user.entity.UserEntity;
 
+@Component
 public class TemplateMapper {
 
     // DTO -> Entity

@@ -2,12 +2,16 @@ package com.example.backend.global.mapper;
 
 import java.time.LocalDateTime;
 
+import org.springframework.stereotype.Component;
+
 import com.example.backend.domain.docs.dto.request.DocsRequestDTO;
 import com.example.backend.domain.docs.dto.response.DocsResponseDTO;
 import com.example.backend.domain.docs.entity.DocsEntity;
 import com.example.backend.domain.template.entity.TypeEntity;
 import com.example.backend.domain.user.entity.UserEntity;
 
+
+@Component
 public class DocsMapper {
 
     // DTO -> Entity

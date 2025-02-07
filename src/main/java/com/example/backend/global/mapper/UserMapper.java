@@ -1,9 +1,12 @@
 package com.example.backend.global.mapper;
 
+import org.springframework.stereotype.Component;
+
 import com.example.backend.domain.user.dto.request.UserRequestDTO;
 import com.example.backend.domain.user.dto.response.UserResponseDTO;
 import com.example.backend.domain.user.entity.UserEntity;
 
+@Component
 public class UserMapper {
 
     // DTO -> Entity

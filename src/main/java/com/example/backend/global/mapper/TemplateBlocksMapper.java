@@ -1,10 +1,13 @@
 package com.example.backend.global.mapper;
 
+import org.springframework.stereotype.Component;
+
 import com.example.backend.domain.template.dto.request.TemplateBlocksRequestDTO;
 import com.example.backend.domain.template.dto.response.TemplateBlocksResponseDTO;
 import com.example.backend.domain.template.entity.TemplateBlocksEntity;
 import com.example.backend.domain.template.entity.TemplateEntity;
 
+@Component
 public class TemplateBlocksMapper {
 
     // DTO -> Entity
