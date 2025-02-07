@@ -4,6 +4,8 @@ import com.example.backend.domain.template.entity.TemplateEnums.BlockType;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -31,6 +33,7 @@ public class DocsBlocksEntity {
     private DocsEntity doscEntity; // 작업문서 Entity
 
     @Column
+    @Enumerated(EnumType.STRING)
     @NotNull
     private BlockType blockType; // 블록 타입
 

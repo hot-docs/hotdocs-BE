@@ -8,6 +8,8 @@ import com.example.backend.domain.user.entity.UserEnums.*;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -42,10 +44,12 @@ public class UserEntity {
     private String socialId; // 소셜 아이디
 
     @Column
+    @Enumerated(EnumType.STRING)
     @NotNull
     private Provider provider = Provider.SELF; // 로그인 카테고리
 
     @Column
+    @Enumerated(EnumType.STRING)
     @NotNull
     private Role role = Role.GUEST; // 회원 역할
 
