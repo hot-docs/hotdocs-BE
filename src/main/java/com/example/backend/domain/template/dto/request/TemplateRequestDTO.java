@@ -19,7 +19,7 @@ public class TemplateRequestDTO { // 클라 -> 서버
         private Long typeId;
 
         @NotBlank(message = "템플릿 이름은 필수입니다.")
-        private String tilte;
+        private String title;
     }
 
     // 템플릿 수정
@@ -34,6 +34,6 @@ public class TemplateRequestDTO { // 클라 -> 서버
         private Long typeId;
 
         @NotBlank(message = "템플릿 이름은 필수입니다.")
-        private String tilte;
+        private String title;
     }
 }
