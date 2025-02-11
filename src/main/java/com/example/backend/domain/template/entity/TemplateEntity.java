@@ -3,6 +3,7 @@ package com.example.backend.domain.template.entity;
 import java.util.List;
 
 import com.example.backend.domain.user.entity.UserEntity;
+import com.example.backend.domain.user.entity.WishEntity;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -42,7 +43,7 @@ public class TemplateEntity {
 
     @Column
     @NotNull
-    private String tilte; // 템플릿 이름
+    private String title; // 템플릿 이름
 
     @Column
     private Boolean agree = false; // 관리자 게시 승인 여부
@@ -51,4 +52,7 @@ public class TemplateEntity {
     @OneToMany(mappedBy = "templateEntity", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<TemplateBlocksEntity> blocksEntityList; // 블록 Entity 리스트
 
+    // 템플릿 1개 : 찜하기 n개
+    @OneToMany(mappedBy = "templateEntity")
+    private List<WishEntity> wishEntityList; // 찜하기 리스트
 }

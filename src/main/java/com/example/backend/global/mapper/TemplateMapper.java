@@ -18,7 +18,7 @@ public class TemplateMapper {
         TemplateEntity entity = new TemplateEntity();
         entity.setUserEntity(userEntity);
         entity.setTypeEntity(typeEntity);
-        entity.setTilte(requestDTO.getTilte());
+        entity.setTitle(requestDTO.getTitle());
 
         return entity;
     }
@@ -28,7 +28,7 @@ public class TemplateMapper {
         TemplateEntity entity = new TemplateEntity();
         entity.setId(requestDTO.getId());
         entity.setTypeEntity(typeEntity);
-        entity.setTilte(requestDTO.getTilte());
+        entity.setTitle(requestDTO.getTitle());
 
         return entity;
     }
@@ -39,9 +39,10 @@ public class TemplateMapper {
         responseDTO.setId(entity.getId());
         responseDTO.setUserId(entity.getUserEntity().getId());
         responseDTO.setUserName(entity.getUserEntity().getName());
-        responseDTO.setTypeId(entity.getTypeEntity().getId());
-        responseDTO.setTilte(entity.getTilte());
+        responseDTO.setTypeName(entity.getTypeEntity().getName());
+        responseDTO.setTitle(entity.getTitle());
         responseDTO.setAgree(entity.getAgree());
+        responseDTO.setWishCount(entity.getWishEntityList().size());
 
         return responseDTO;
     }
